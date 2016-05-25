@@ -1,4 +1,4 @@
-# Purpose
+# PURPOSE
 
 Provide basic information on the current weather for a specified location.
 The information must be available for as many countries as possible and
