@@ -2,3 +2,14 @@
 Calling weather-for(Str) will never work with declared signature ($city, $country)
 at t/online/01-weather-for.t:24
 ------> [32misa-ok [33m⏏[31mweather-for('blargs' x 12), Failure,[0m
+    not ok 1 - result is of a correct data type
+    # Failed test 'result is of a correct data type'
+    # at t/online/01-weather-for.t line 9
+    # Actual type: WebService::Weather::WebService::Weather::Result
+    ok 2 - temp is numerical
+No such method 'wind' for invocant of type 'WebService::Weather::WebService::Weather::Result'. Did you mean any of these?
+    end
+    min
+    sink
+
+  in block  at t/online/01-weather-for.t line 12
