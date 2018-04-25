@@ -1,2 +1,2 @@
-unit class WebService::Weather;
+unit module WebService::Weather;
 
