@@ -2,9 +2,10 @@ use Test::When <online>;
 use Test;
 use WebService::Weather;
 
+my $api-key = "Shinny-API-key" ;
 for ('London'), ('London', 'ca') -> $args {
     subtest {
-        my $result = weather-for |$args;
+        my $result = weather-for |$args , :$api-key ;
 
         isa-ok $result, 'WebService::Weather::Result',
             'result is of a correct data type';
