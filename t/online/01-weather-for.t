@@ -1,6 +1,6 @@
 use Test::When <online>;
 use Test;
-use WebService::Weather;
+use WebService::Weather "Shinny-API-key" ;
 
 for ('London'), ('London', 'ca') -> $args {
     subtest {

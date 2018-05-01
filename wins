@@ -17,3 +17,15 @@ No such method 'wind' for invocant of type 'WebService::Weather::Result'. Did yo
     sink
 
   in block  at t/online/01-weather-for.t line 12
+
+===
+
+# Shinny-API-key
+    ok 1 - result is of a correct data type
+    ok 2 - temp is numerical
+No such method 'wind' for invocant of type 'WebService::Weather::Result'. Did you mean any of these?
+    end
+    min
+    sink
+
+  in block  at t/online/01-weather-for.t line 12
