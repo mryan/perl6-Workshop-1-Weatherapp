@@ -3,6 +3,10 @@ use Test;
 use WebService::Weather;
 
 my $api-key = "Shinny-API-key" ;
+
+isa-ok weather-for('Melbourne', 'au'), Failure,
+    'Failure when there is no api-key';
+
 for ('London'), ('London', 'ca') -> $args {
     subtest {
         my $result = weather-for |$args , :$api-key ;

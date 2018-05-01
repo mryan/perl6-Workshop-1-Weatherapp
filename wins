@@ -18,3 +18,40 @@ No such method 'wind' for invocant of type 'WebService::Weather::Result'. Did yo
     sink
 
   in block  at t/online/01-weather-for.t line 13
+
+===
+
+ok 1 - Failure when there is no api-key
+# Shinny-API-key
+    ok 1 - result is of a correct data type
+    ok 2 - temp is numerical
+    ok 3 - wind is numerical
+    ok 4 - precip is numerical
+    ok 5 - temperature is not too high
+    ok 6 - temperature is not too low
+    ok 7 - wind speed is not too high
+    ok 8 - wind speed is not too low
+    ok 9 - precipitation is not too high
+    ok 10 - precipitation is not too low
+    1..10
+ok 2 - Testing with args: London
+# Shinny-API-key
+    ok 1 - result is of a correct data type
+    ok 2 - temp is numerical
+    ok 3 - wind is numerical
+    ok 4 - precip is numerical
+    ok 5 - temperature is not too high
+    ok 6 - temperature is not too low
+    ok 7 - wind speed is not too high
+    ok 8 - wind speed is not too low
+    ok 9 - precipitation is not too high
+    ok 10 - precipitation is not too low
+    1..10
+ok 3 - Testing with args: London ca
+# Shinny-API-key
+not ok 4 - we get a Failure for unknown city
+# Failed test 'we get a Failure for unknown city'
+# at t/online/01-weather-for.t line 29
+# Actual type: WebService::Weather::Result
+1..4
+# Looks like you failed 1 test of 4
